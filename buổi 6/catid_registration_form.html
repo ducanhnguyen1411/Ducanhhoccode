@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat City Registration</title>
+    <style>
+    .body {
+        margin: auto;
+       
+      }</style>
+</head>
+<body>
+    <h1 >Cat City Registration</h1>
+    <img src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49ed3252c0b2ffb49cf8b508892e452d" alt="cat imgage" width="400">
+<!--
+    name
+    species
+    age
+    eye_color
+    fur_color
+    address
+    favorites thing
+    others information
+
+-->
+<form action="">
+    <!--
+        input type="text" -> cho nhập chữ và số, mọi ký tự
+        input type="number" -> chỉ được nhập số
+    
+    -->
+   Name: <br>
+   <input type="text" name="cat-name"> <br> 
+   <br>
+   Age: <br>
+   <input type="number"  name="cat-age"> <br>
+   <br>
+   Gender: <br>
+   <!--
+    input type="radio" -> chọn 1 lựa chọn, các input radio phải cùng name mới giới hạn lựa chọn được. 
+    attr value: giá trị của lựa chọn radio
+   -->
+   <input type="radio" name="cat-gender" value="Male"> Male
+   <input type="radio" name="cat-gender" value="Female"> FeMale
+   <input type="radio" name="cat-gender" value="other"> Other
+   <br> <br>
+   Fur Color: <br>
+   <input type="radio" name="fur-color" id="" value="Black"> Black
+   <input type="radio" name="fur-color" value="Brown"> Brown
+   <input type="radio" name="fur-color" value="Tri-color"> Tri Color
+   <input type="radio" name="fur-color" value="Grey" id=""> Grey
+   <br><br>
+   Cat loves to: <br>
+   <input type="checkbox" name="cat_fav_activities" id="" value="Eat"> Eat
+   <input type="checkbox" name="cat_fav_activities" id="" value="Lay"> Lay
+   <input type="checkbox" name="cat_fav_activities" id="" value="Play"> Play
+   <input type="checkbox" name="cat_fav_activities" id="" value="Sleep"> Sleep
+   <br><br>
+   Cat hates: <br>
+
+   <input type="checkbox" name="cat_hates" id="" value="Bath"> Bath
+   <input type="checkbox" name="cat_hates" id="" value="Nail"> Nail
+   <input type="checkbox" name="cat_hates" id="" value="Hug"> Hug
+   <br><br>
+   Cat Breed: <br>
+   <select name="Cat_Breed" id=""> 
+    <option value="Siamese">Siamese</option>
+    <option value="Persian">Persian</option>
+    <option value="Maine Coone">Maine Coone</option>
+    <option value="Ragdoll">Ragdoll</option>
+    <option value="Bengal">Bengal</option>
+   </select>
+   <br><br>
+   Cat ID: <br>
+   <input type="password" name="Cat_ID">
+   <br><br>
+<!--
+    input: type: Password -> toàn bộ nội dung nhập vào sec được ẩn đi
+-->
+
+Other information:
+<br>
+<!--
+    Textarea-> cho phép điền thông tin trên nhiều dòng
+-->
+<textarea name="cat_other_info" id="" cols="50" rows="5
+"></textarea>
+<br><br>
+<!--
+    input type= reset -> clear Form
+-->
+<input type="reset" value="Reset">
+<button type="submit"> Submit</button>
+<button>Open Cat Table</a></button>
+
+</form>
+    
+</body>
+</html>
